@@ -1,0 +1,12 @@
+.green-button {
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .green-button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+  }

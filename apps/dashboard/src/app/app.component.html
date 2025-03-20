@@ -1,0 +1,53 @@
+<!--<ng-container *ngComponentOutlet="datosIaeShared"></ng-container>
+
+holaaaaaaaaaa
+
+
+
+<ul class="remote-menu">
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="login">Login</a></li>
+<li><a routerLink="ibi">Ibi</a></li>
+<li><a routerLink="ivtm">Ivtm</a></li>
+</ul>
+<router-outlet></router-outlet>-->
+
+<div class="container">
+  <!-- Botones -->
+  <div class="button-container">
+    <button
+      mat-raised-button
+      [ngClass]="{ 'active-button': selectedTab === 'IAE' }"
+      (click)="selectTab('IAE')"
+    >
+      IAE
+    </button>
+    <button
+      mat-raised-button
+      [ngClass]="{ 'active-button': selectedTab === 'IBI' }"
+      (click)="selectTab('IBI')"
+    >
+      IBI
+    </button>
+    <button
+      mat-raised-button
+      [ngClass]="{ 'active-button': selectedTab === 'IVTM' }"
+      (click)="selectTab('IVTM')"
+    >
+      IVTM
+    </button>
+  </div>
+
+  <!-- Contenedor para cargar el componente dinámico -->
+  <div class="component-container">
+    <ng-container *ngIf="selectedTab === 'IAE'">
+      <ng-container *ngComponentOutlet="datosIaeShared"></ng-container>
+    </ng-container>
+    <ng-container *ngIf="selectedTab === 'IBI'">
+      <ng-container *ngComponentOutlet="datosIbiShared"></ng-container>
+    </ng-container>
+    <ng-container *ngIf="selectedTab === 'IVTM'"> 
+      <ng-container *ngComponentOutlet="datosIvtmShared"></ng-container>
+    </ng-container>
+  </div>
+</div>
