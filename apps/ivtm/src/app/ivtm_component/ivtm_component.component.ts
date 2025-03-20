@@ -4,6 +4,7 @@ import { Button2Component } from '@ng-mf/button2';
 
 @Component({
   selector: 'ng-mf-ivtm-component',
+  standalone:true,
   imports: [CommonModule,Button2Component],
   templateUrl: './ivtm_component.component.html',
   styleUrl: './ivtm_component.component.css',

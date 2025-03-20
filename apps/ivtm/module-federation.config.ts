@@ -5,7 +5,7 @@ const config: ModuleFederationConfig = {
   exposes: {
     './Routes': 'apps/ivtm/src/app/remote-entry/entry.routes.ts',
     './ComponenteIvtmShared': 'apps/ivtm/src/app/ivtm_component/ivtm_component.component.ts',
-    
+    './ComponenteIvtmPruebaShared': 'apps/ivtm/src/app/ivtm_prueba/ivtm_prueba_component.ts',
   },
 };
 
